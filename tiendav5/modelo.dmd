@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modelo" id="69542482-E0FB-6F03-CFCC-7BCF23CAE15E" version="3.5">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:19:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>69542482-E0FB-6F03-CFCC-7BCF23CAE15E</designId>
+</OSDM_Design>

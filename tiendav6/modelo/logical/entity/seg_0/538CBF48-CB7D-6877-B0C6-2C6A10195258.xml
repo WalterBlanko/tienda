@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="538CBF48-CB7D-6877-B0C6-2C6A10195258" name="provincia">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>8272A87B-A60A-C537-B331-97B572785196</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idProvincia" id="3D93C914-A053-9F7C-6244-21A5CAB8708B">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>D00C6DBC-B230-8419-8459-8229F6A24751</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombreProvincia" id="E70869D9-3843-8E30-DE94-730F2791E492">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>6BCFD332-E3E7-B969-459E-CEC6EBD0D9C2</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idRegion" id="4E018F7D-F59C-BBC1-7BF2-720D434B9869">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>98394351-8B30-6DEB-C950-055266B355CB</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<referedAttribute>61601894-11A6-1C06-025D-DAE8120854D2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="84384068-ABCF-CCAF-898B-F9EECD0239DA" name="provincia PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>CBDD933E-6778-5896-654F-DE350E9990BA</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3D93C914-A053-9F7C-6244-21A5CAB8708B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

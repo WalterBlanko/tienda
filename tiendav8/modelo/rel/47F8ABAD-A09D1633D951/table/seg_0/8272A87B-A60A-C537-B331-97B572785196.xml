@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8272A87B-A60A-C537-B331-97B572785196" name="provincia">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:12 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_provincia" id="D00C6DBC-B230-8419-8459-8229F6A24751">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_provincia" id="6BCFD332-E3E7-B969-459E-CEC6EBD0D9C2">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="region_id_region" id="731107A1-125A-FE28-13E2-BBBFC2140F44">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:32:17 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="636341A9-5FC8-A49F-6AB9-DD6A4E502559" referredColumn="E10FFD06-6075-AAA1-295F-B937E5861634"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CBDD933E-6778-5896-654F-DE350E9990BA" name="provincia_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:37 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D00C6DBC-B230-8419-8459-8229F6A24751"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="45630BA8-E5A4-0166-ADDB-B45E9A4659A9" name="provincia_region_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:32:17 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="731107A1-125A-FE28-13E2-BBBFC2140F44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

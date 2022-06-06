@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1217E4F1-7CAE-DEDC-523D-6A1907B4CE8C" name="administrador">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:56:46 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_9</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_administrador" id="7DDEFACB-F41E-68F8-D0B1-3F780074775E">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:56:56 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="usuario_id_usuario" id="CA3A2096-CA8F-BDB5-6AFC-53FD7BF33290">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:57:23 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D2FDD43C-78B3-8904-B13C-4D4B6E9AB500" referredColumn="E0041FD4-0D2B-2A62-B2DE-48BB9648C063"/>
+</associations>
+</Column>
+<Column name="usuario_id_usuario2" id="0F4BADD6-08F5-A075-5E8B-EDC9EAB9FFB4">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:52:18 UTC</createdTime>
+<generatorID>5A63A630-C0DA-E482-CAFA-9E65E19BFDFB</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8C70C36-7B59-3F56-61F8-A7163B2414AF" referredColumn="E0041FD4-0D2B-2A62-B2DE-48BB9648C063"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07466207-D71B-022B-3D4E-2DA53DA557C5" name="administrador_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:57:04 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DDEFACB-F41E-68F8-D0B1-3F780074775E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="647C352D-1C87-D023-10D1-F0632B1763A6" name="administrador__IDX">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:52:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B6DC8F05-DCB3-A7E1-2254-02DB121452E3</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="0F4BADD6-08F5-A075-5E8B-EDC9EAB9FFB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="57210DED-8D92-4318-93F1-F8C7B5E692C2" name="administrador_usuario_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:57:23 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA3A2096-CA8F-BDB5-6AFC-53FD7BF33290"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F32C3966-4E8E-E2F3-1E1F-EBEE09C90BDF" name="administrador_usuario_FKv2">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:52:18 UTC</createdTime>
+<generatorID>B6DC8F05-DCB3-A7E1-2254-02DB121452E3</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F4BADD6-08F5-A075-5E8B-EDC9EAB9FFB4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,89 @@
+{% load static %}
+<header>
+    <section class="top-nav"> 
+        <div class="logo">
+          <a href="{% url 'home' %}" class="logo__letras"><img class="logo__img" src="{% static 'files/img/logo.png' %}" alt="logo">Abstracta</a>
+        </div>
+        <a href="{% url 'login' %}" class="menu__link" >Iniciar Sesión</a>
+        <a href="{% url 'register' %}" class="menu__link" >Registrarse</a>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+          <li><a href="{% url 'catalogo' %}" class="menu__link" >Maceteros</a></li>
+          <li><a href="{% url 'catalogo' %}" class="menu__link" >Flores</a></li>
+          <li><a href="{% url 'catalogo' %}" class="menu__link" >Tierra de hojas</a></li>
+          <li><a href="{% url 'catalogo' %}" class="menu__link" >Arbustos</a></li>
+          <li>
+            <div class="nav__contacto">
+              <button type="button" class="btn btn-primary btn-lg btn-floating" data-bs-toggle="modal"  data-bs-target="#exampleModal" style="background-color: #000; box-shadow: none;">
+                <i class="bi bi-mailbox2" ></i>
+              </button>
+              <div class="modal fade colores" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content" style="color:black ;">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Formulario de contacto</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="#" method="POST" id="formulario" onsubmit="return false;">
+                        <div class="mb-3" id="campo">
+                          <span>*Debe llenar todos los campos</span>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label fw-bold fs-4">Nombre completo:</label>
+                          <input type="text" class="form-control fs-5" placeholder="Ingrese nombre completo" id="txtNombre" style="width:480px;" aria-describedby="emailHelp" name="nombre">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label fw-bold fs-4" >Email:</label>
+                          <input type="email" class="form-control fs-5" placeholder="Ingrese su email" id="txtEmail" style="width:480px;" aria-describedby="emailHelp" name="email">
+                        </div>
+                        <div class="row footer__alineacion">
+                          <div class="col">
+                            <label class="form-check-label fw-bold fs-4 footer__documento" for="inlineRadio1" >Tipo de documento</label>
+                            <div class="form-check">
+                              <input class="form-check-input footer__input" type="radio" name="rut" id="rRut" style="width:15px; height: 15px;" value="option1">
+                              <label class="form-check-label fw-bold fs-4" for="inlineRadio1" style="padding-left: 6px;">Rut</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input footer__input" type="radio" name="inlineRadioOptions" id="rPasaporte" style="width:15px; height: 15px;" value="option2">
+                              <label class="form-check-label fw-bold fs-4" for="inlineRadio2" style="padding-left: 6px;">Pasaporte</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label fw-bold fs-4" >Número de documento:</label>
+                              <input type="number" class="form-control fs-5" placeholder="Ingrese número de documento" id="txtDocumento" style="width:250px;" aria-describedby="emailHelp" name="documento">
+                            </div>
+                          </div>  
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label fw-bold fs-4" >Número de télefono (opcional):</label>
+                          <input type="number" class="form-control fs-5" placeholder="Ingrese su número de télefono" id="exampleInputEmail1" style="width:480px;" aria-describedby="emailHelp" name="telefono">
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label fw-bold fs-4" >Ciudad de residencia:</label>
+                          <input type="text" class="form-control fs-5" placeholder="Ingrese su ciudad de residencia" id="txtCiudad" style="width:480px;" aria-describedby="emailHelp" name="residencia">
+                        </div>
+                        <div class="mb-3">  
+                          <label for="floatingTextarea1" class="form-label fw-bold fs-4 ">Redacte su Mensaje:</label>
+                          <textarea class="form-control fs-5" placeholder="Redacte su mensaje" id="txtMensaje" style="height: 100px; width:480px; resize: none;" name="texto"></textarea>
+                        </div>
+                        <div class="footer__botones">
+                          <button type="reset" class="btn btn-primary fs-4" style="background-color: #000; width:100px; box-shadow:none;" data-bs-dismiss="modal">Cerrar</button>
+                          <button type="reset" class="btn btn-primary fs-4" style="background-color: #000; width:100px; box-shadow:none;" >Limpiar</button>
+                          <button type="button" id="btnEnviar" onclick="validar()" class="btn btn-primary fs-4" style="background-color: #000; width:100px; box-shadow:none;" >Enviar</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </li>
+        </ul>
+    </section>
+</header>

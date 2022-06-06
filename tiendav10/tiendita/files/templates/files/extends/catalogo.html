@@ -1,0 +1,26 @@
+{% load static %}
+<hr>
+<h2>Bienvenido</h2>
+<hr>
+<div class="contenedor">
+    <div class="titulo">
+        <h1>categorias</h1>
+    </div>
+    <div class="contenedor__espacio">
+        <div class="contenedor__categorias">
+            <div class="espacio item">
+                <a href="{% url 'catalogo' %}"><img src="{% static 'files/img/maceteros.png' %}" alt=""><h2>maceteros</h2></a>
+            </div>
+            <div class="espacio item">
+                <a href="{% url 'catalogo' %}"><img src="{% static 'files/img/flores.png' %}" alt=""><h2>flores</h2></a>
+            </div>
+            <div class="espacio item">
+                <a href="{% url 'catalogo' %}"><img src="{% static 'files/img/tierra.png' %}" alt=""><h2>tierra de hojas</h2></a>
+            </div>
+            <div class="espacio item">
+                <a href="{% url 'catalogo' %}"><img src="{% static 'files/img/arbustos.png' %}" alt=""><h2>arbustos</h2></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>

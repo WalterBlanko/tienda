@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="56BE4CAE-C55B-19AB-44FE-1236CEF9084D" name="costo_productov2">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 21:27:38 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="precio_producto" id="066187E6-2ACF-F86E-BFB2-BC145EAE25FD">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 21:27:55 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producto_id_producto" id="DBAC1A8B-CFB4-802E-AC28-2A454D822D13">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 21:28:04 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FDDB2E7A-72E3-404C-D54B-A36075D92585" referredColumn="A73BAE0C-018E-17AA-37DB-776B0EB414A5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="18DA1A74-907F-09F0-EB11-602DB0207F36" name="costo_productov2_producto_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 21:28:04 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBAC1A8B-CFB4-802E-AC28-2A454D822D13"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

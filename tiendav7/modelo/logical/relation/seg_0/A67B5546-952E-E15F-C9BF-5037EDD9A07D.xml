@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="costo_productov2_producto_FK" directorySegmentName="seg_0" id="A67B5546-952E-E15F-C9BF-5037EDD9A07D">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>FDDB2E7A-72E3-404C-D54B-A36075D92585</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<sourcePk>F5C2D6C6-57E1-3DE4-372F-F4D35DA54D11</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>CDC5AEF2-2726-F1F7-6D21-47C056E193A6</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8F81C705-5753-5D26-CDCF-9A0BF684BBCD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

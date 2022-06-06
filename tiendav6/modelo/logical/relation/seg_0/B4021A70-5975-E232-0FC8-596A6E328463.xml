@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="comuna_provincia_FK" directorySegmentName="seg_0" id="B4021A70-5975-E232-0FC8-596A6E328463">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>86E27B30-520E-FF73-5AC0-476A4196C38F</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<sourcePk>84384068-ABCF-CCAF-898B-F9EECD0239DA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>538CBF48-CB7D-6877-B0C6-2C6A10195258</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>EC05DC26-0257-C26D-13E5-D743AAB431AE</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

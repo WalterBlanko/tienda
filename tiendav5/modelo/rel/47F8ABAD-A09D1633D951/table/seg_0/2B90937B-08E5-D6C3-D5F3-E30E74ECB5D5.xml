@@ -1,0 +1,45 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2B90937B-08E5-D6C3-D5F3-E30E74ECB5D5" name="region">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:28:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_5</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_region" id="E10FFD06-6075-AAA1-295F-B937E5861634">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_region" id="7780FB89-FD34-72DC-3C66-7EF960F83DAA">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8B12B9AE-4063-D3DF-AB3C-E424071196E1" name="region_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:29:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E10FFD06-6075-AAA1-295F-B937E5861634"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4E8C84F-57B8-D3DD-75FE-5967F881217E" name="producto">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:35:19 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_8</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_producto" id="A73BAE0C-018E-17AA-37DB-776B0EB414A5">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:51:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_producto" id="9A469D9C-41E6-EC7D-64B7-086065648E71">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:51:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_id_cliente" id="F9D8B55F-2444-F543-E7C0-B37019B76DBA">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:54:36 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="939FEC7C-FD0D-0106-B424-155A905DB043" referredColumn="E811EFAE-C84D-6496-EEF0-CD2A72ED12B6"/>
+</associations>
+</Column>
+<Column name="historial_id_compra" id="D93E8931-84BA-0E63-19CC-890A8DEC7A3D">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:40:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4752BB79-85AA-4DBD-B414-BBA9E85DEDC5" referredColumn="90318714-71ED-05E4-F1C5-EA31D8C80AFB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9319DF09-9CA0-6E69-70EB-5A38A2FD06E9" name="producto_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:51:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A73BAE0C-018E-17AA-37DB-776B0EB414A5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBE0B40A-D07D-2AAF-1F97-D59DE17FA680" name="producto_cliente_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:54:36 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F9D8B55F-2444-F543-E7C0-B37019B76DBA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="22362BFC-82E6-B3CA-EFF0-8CAD799F5E18" name="producto_historial_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:40:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D93E8931-84BA-0E63-19CC-890A8DEC7A3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

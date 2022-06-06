@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6740B75D-0F85-013E-786E-F5DDCDD08F45" name="historial">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:38:38 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_compra" id="90318714-71ED-05E4-F1C5-EA31D8C80AFB">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:39:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cliente_id_cliente" id="076CA7F2-6472-AE76-450D-245BA16B8E0B">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:40:38 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1C6FA791-B1AD-6BD0-B118-AF117F4F3625" referredColumn="E811EFAE-C84D-6496-EEF0-CD2A72ED12B6"/>
+</associations>
+</Column>
+<Column name="cantidadProductos_compra" id="B4EBD847-7638-AF1E-D0C7-BF61B83ADBFC">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:46:26 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="total_compra" id="6FFB526A-22EE-5F2E-3B34-3C84BDC42A06">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:46:57 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="producto_id_producto" id="D5C4C9FD-AB20-7544-D9FD-DB3E30A811B9">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:48:21 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="66B6418F-D732-2DE4-D55B-D76505A04EA4" referredColumn="A73BAE0C-018E-17AA-37DB-776B0EB414A5"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="575B0500-B555-F5D5-B03E-326FB64399D9" name="historial_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:39:45 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90318714-71ED-05E4-F1C5-EA31D8C80AFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE0BBA30-C2FE-01CE-A5BB-13581FF82570" name="historial_cliente_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:40:38 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="076CA7F2-6472-AE76-450D-245BA16B8E0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A3E92940-B5C5-5E59-608D-36974060FFF0" name="historial_producto_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:48:21 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5C4C9FD-AB20-7544-D9FD-DB3E30A811B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

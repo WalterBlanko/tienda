@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="empleado_administrador_FK" directorySegmentName="seg_0" id="47D74AA3-B656-C921-FAC9-B3194E1887E5">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>ACCF8D50-FC02-EBEE-B13C-FC5EC3F6707C</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<sourcePk>A47E8416-2ED8-6295-7039-756115ED50C0</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2B48BCBD-D1BB-8233-8BE1-0E4D9646E594</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D97E743E-9544-7FCC-238D-3725B2BBD61C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

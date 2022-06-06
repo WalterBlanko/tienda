@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4752BB79-85AA-4DBD-B414-BBA9E85DEDC5" containerWithKeyObject="A4E8C84F-57B8-D3DD-75FE-5967F881217E" localFKIndex="22362BFC-82E6-B3CA-EFF0-8CAD799F5E18" name="producto_historial_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:40:25 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<referredTableLongName>historial</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6740B75D-0F85-013E-786E-F5DDCDD08F45</referredTableID>
+<keyObject>575B0500-B555-F5D5-B03E-326FB64399D9</keyObject>
+<referredKeyID>575B0500-B555-F5D5-B03E-326FB64399D9</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_compra</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

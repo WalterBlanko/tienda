@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="usuario_comuna_FK" directorySegmentName="seg_0" id="42745D9B-7D7A-6BD2-A8CA-625F34CF7CB4">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:49:53 UTC</createdTime>
+<generatorID>36E52145-C44B-1D5E-2C8A-9631302B3C88</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<sourcePk>9E5FA8F1-F426-BDC4-CF09-F4DE8BF2487B</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>EC05DC26-0257-C26D-13E5-D743AAB431AE</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>00E66373-536A-9F19-ACAA-378B5AB3E3E0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

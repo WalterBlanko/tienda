@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="764D2C37-1307-DDBF-D525-EA5507A22E60" name="usuario">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:22:27 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_usuario" id="E0041FD4-0D2B-2A62-B2DE-48BB9648C063">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:24:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_usuario" id="B31394DD-DD03-163A-D2CC-1FF83F9ED095">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:24:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="correo_usuario" id="70387D57-253F-A473-9A55-EC641B236E4A">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:24:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200</dataTypeSize>
+<ownDataTypeParameters>200,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pass_usuario" id="87029D45-81A4-29BD-BF69-673475B315D0">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:24:53 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40</dataTypeSize>
+<ownDataTypeParameters>40,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="comuna_id_comuna" id="D476F35A-196C-D9B2-D022-D86883063FB6">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:46:21 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="36E52145-C44B-1D5E-2C8A-9631302B3C88" referredColumn="73BD3AF2-0DD0-7869-7C16-0C632EC7C423"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="34110E83-A773-23CD-DA40-A10333BE8A1B" name="usuario_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:24:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E0041FD4-0D2B-2A62-B2DE-48BB9648C063"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E41A7E68-77A4-6B32-559D-B778B760C848" name="usuario_comuna_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:46:21 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D476F35A-196C-D9B2-D022-D86883063FB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

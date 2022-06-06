@@ -1,0 +1,122 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="104DA42B-3A65-3D3A-B535-133A438825A4" name="empleado">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 16:34:46 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<ordsAlias>table_7</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="usuario_id_usuario" id="05695A41-7498-E632-F0DE-04566A55A328">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:49:36 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="39DEE6F6-760D-BBFE-0A81-5F6874F1E5F2" referredColumn="E0041FD4-0D2B-2A62-B2DE-48BB9648C063"/>
+</associations>
+</Column>
+<Column name="id_empleado" id="4A0CEAAC-1A9E-3D6F-BB8C-38B4391F7095">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:49:57 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="administrador_id_administrador" id="7CFE7FF3-8DCD-0BB7-2E2C-B3B4487BEBC5">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:57:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ACCF8D50-FC02-EBEE-B13C-FC5EC3F6707C" referredColumn="7DDEFACB-F41E-68F8-D0B1-3F780074775E"/>
+</associations>
+</Column>
+<Column name="usuario_id_usuario2" id="13CC1E9A-E575-0142-16F9-23353D7AE814">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:52:18 UTC</createdTime>
+<generatorID>11A787CA-FED5-F7B9-3790-136E4318B0E7</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8AC609A1-72C5-AFF1-4A54-C419C1BBD7EA" referredColumn="E0041FD4-0D2B-2A62-B2DE-48BB9648C063"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6FDFF464-3752-2455-BB7D-75E15250173D" name="empleado_PK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:49:57 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4A0CEAAC-1A9E-3D6F-BB8C-38B4391F7095"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B3086D46-B820-919D-EF3E-AD2689111DB4" name="empleado__IDX">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:52:18 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F66D5972-07BA-7C26-7C5C-FA02890A2A46</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="13CC1E9A-E575-0142-16F9-23353D7AE814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="06FD35C0-D63A-C96C-5693-05795976B1A2" name="empleado_usuario_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:49:36 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="05695A41-7498-E632-F0DE-04566A55A328"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED9A464E-7C8F-8F17-CD94-754EA2A46DAA" name="empleado_administrador_FK">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-01 20:57:28 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CFE7FF3-8DCD-0BB7-2E2C-B3B4487BEBC5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4AF27A1A-53BF-D40F-E9EC-01FC7FF2EA97" name="empleado_usuario_FKv2">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-02 15:52:18 UTC</createdTime>
+<generatorID>F66D5972-07BA-7C26-7C5C-FA02890A2A46</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="13CC1E9A-E575-0142-16F9-23353D7AE814"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
