@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - menu</title>
+
+    {% load static %}
+    {% include 'files/extends/links.html' %}
+</head>
+<body class="gradient-custom">
+    {% include 'files/extends/barra.html' %}    
+    <div class="row">
+        <h1>Usuarios registrados</h1>
+    </div>
+    <tr>
+        <td>
+            <td>Id</td>
+            <td>Usuario</td>
+            <td>Correo</td>
+            <td>Region</td>
+            <td>Provincia</td>
+            <td>Comuna</td>
+            <td>Contraseña</td>
+        </td>
+    </tr>
+    <table>
+        {% for us in usuarios %}
+            <tr>
+                <td>{{ us.idUsuario }}</td>
+                <td>{{ us.nombreUsuario }}</td>
+                <td>{{ us.correoUsuario }}</td>
+                <td>{{ us.passUsuario }}</td>
+                <td>{{ us.Region }}</td>
+                <td>{{ us.Provincia }}</td>
+                <td>{{ us.Comuna }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    {% include 'files/extends/footer.html' %}    
+</body>
+</html>

@@ -1,4 +1,5 @@
 from django.db import models
+from django import forms
 
 # Create your models here.
 # Modelo para Region
@@ -27,16 +28,16 @@ class Comuna(models.Model):
         return self.nombreComuna
 
 class Usuario(models.Model):
-    idUsuario = models.IntegerField(primary_key = True, verbose_name = 'Id del usuario')
-    nombreUsuario = models.CharField(max_length= 80, verbose_name = 'Nombre del usuario')
-    correoUsuario = models.CharField(max_length= 80, verbose_name = 'Correo del usuario')
-    passUsuario = models.CharField(max_length= 80, verbose_name = 'Password del usuario')
+    idUsuario = models.AutoField(primary_key = True, verbose_name = 'Id del usuario')
+    nombreUsuario = models.CharField(max_length = 80, verbose_name = 'Nombre del usuario')
+    correoUsuario = models.CharField(max_length = 80, unique = True, verbose_name = 'Correo del usuario')
+    passUsuario = models.CharField(max_length = 80, verbose_name = 'Password del usuario')
     Region = models.ForeignKey(Region, on_delete = models.CASCADE)
     Provincia = models.ForeignKey(Provincia, on_delete = models.CASCADE)
     Comuna = models.ForeignKey(Comuna, on_delete = models.CASCADE)
 
     def __str__(self):
-        return self.nombreUsuario
+        return self.correoUsuario
 
 class Administrador(models.Model):
     idAdministrador = models.IntegerField(primary_key = True, verbose_name = 'Id del administrador') 

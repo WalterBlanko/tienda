@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from .models import Producto
+
+from .forms import UsuarioForm
+from .models import Producto, Usuario
 
 # Create your views here.
 def home(request):
@@ -12,7 +14,15 @@ def login(request):
     return render(request, 'files/login.html')
 
 def register(request):
-    return render(request, 'files/register.html')
+    datos = {
+        'form': UsuarioForm()
+    }
+    if request.method == 'POST':
+        formulario = UsuarioForm(request.POST)
+        if formulario.is_valid:
+            formulario.save()
+            datos['mensaje'] = 'Registrado correctamente'
+    return render(request, 'files/register.html', datos)
 
 def catalogo(request):
     productos = Producto.objects.all()
@@ -21,5 +31,9 @@ def catalogo(request):
     }
     return render(request, 'files/catalogo.html', datos)
 
-def test(request):
-    return render(request, 'files/base.html')
+def admin(request):
+    usuarios = Usuario.objects.all()
+    datos = {
+        'usuarios': usuarios
+    }
+    return render(request, 'files/adm.html', datos)

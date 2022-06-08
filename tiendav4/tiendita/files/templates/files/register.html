@@ -8,7 +8,7 @@
 
     {% load static %}
     {% include 'files/extends/links.html' %}
-    <script type="text/javascript" src="{% static 'files/js/app.js' %}"></script>
+    <script type="text/javascript" src="{% static 'files/js/app3.js' %}"></script>
 </head>
 <body class="gradient-custom">
     {% include 'files/extends/barra.html' %}    
@@ -22,51 +22,30 @@
                             <div class="mb-md-5 mt-md-4 pb-5">
                                 <h2 class="fw-bold mb-2 text-uppercase">Registrate!</h2>
                                 <p class="text-white-50 mb-5">Ingresa tus datos!</p>
-                                <h2 class="fw-bold mb-2 text-uppercase emptyInput" id="error">¡ERROR!</h2>
-                                <form id="registro">
-                                    <div class="form-outline form-white mb-4">
-                                        <label class="form-label fw-bold fs-4" for="InputUsername">Nombre de usuario</label>
-                                        <input type="text" id="InputUsername" class="form-control form-control-lg" />
-                                        <span class="emptyUser"></span>
+                                <h2 class="fw-bold mb-2 text-uppercase emptyError"></h2>
+                                <form method='post' action="#" id="registro">
+                                    {% csrf_token %}
+                                    <div class="form-group edit">
+                                        {{ form.as_table }}
+                                        <div class="form-outline form-white mb-4">
+                                            <label class="form-label fw-bold fs-4" for="InputPassword">Confirmar contraseña</label>
+                                            <input type="Password" id="id_confirmPass" class="form-control form-control-lg" placeholder="Confirmar contraseña"/>
+                                        </div>
                                     </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <label class="form-label fw-bold fs-4" for="InputEmail">Correo</label>
-                                        <input type="email" id="InputRegEmail" class="form-control form-control-lg" />
-                                        <span class="emptyEmail"></span>
+                                    <input type="reset" class="btn btn-outline-light btn-lg px-5 tamanno" onclick="limpiar()" id="btnLimpiar" value="Limpiar">
+                                    <input type="submit" class="btn btn-outline-light btn-lg px-5 tamanno" onclick="enviar()" id="btnEnviar" value="Enviar">
+                                    <div id="error" class="alert alert-danger" role="alert">
+                                        {{ mensaje }}
+                                        <span class="alert alert-danger" id="errorUsername"></span>
+                                        <span class="alert alert-danger" id="errorEmail"></span>
+                                        <span class="alert alert-danger" id="errorRegion"></span>
+                                        <span class="alert alert-danger" id="errorProvincia"></span>
+                                        <span class="alert alert-danger" id="errorComuna"></span>
+                                        <span class="alert alert-danger" id="errorPassword1"></span>
+                                        <span class="alert alert-danger" id="errorPassword2"></span>
                                     </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <label for="InputAddress" class="form-label fw-bold fs-4">Indique su Ubicación: </label>
-                                        <select id="regiones" class="form-select fs-5">
-                                            <option active>Seleccione region</option>
-                                        </select>
-                                        <span class="emptyRegion"></span>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <select id="provincia" class="form-select fs-5">
-                                            <option active>Seleccione provincia</option>
-                                        </select>
-                                        <span class="emptyProvincia"></span>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <select id="comunas" class="form-select fs-5">
-                                            <option active>Seleccione comuna</option> 
-                                        </select>
-                                        <span class="emptyComuna"></span>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <label class="form-label fw-bold fs-4" for="InputPassword">Contraseña</label>
-                                        <input type="Password" id="InputRegPassword" class="form-control form-control-lg" />
-                                        <span class="emptyPass"></span>
-                                        <span class="errorPass"></span>
-                                    </div>
-                                    <div class="form-outline form-white mb-4">
-                                        <label class="form-label fw-bold fs-4" for="InputPassword">Confirmar contraseña</label>
-                                        <input type="Password" id="InputRegPassword2" class="form-control form-control-lg" />
-                                        <span class="emptyPass2"></span>
-                                    </div>
-                                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Register</button>
                                 </form>
-                            </div>
+                            </div> 
                             <div>
                               <p class="mb-0 fw-bold fs-4">¿Ya tienes un cuenta? <a href="{% url 'login' %}" class="text-white-50 fw-bold fs-4">Inicia Sesión!</a></p>
                             </div>
@@ -76,7 +55,7 @@
             </div>
         </div>
     </section>
-
+    <hr>
     {% include 'files/extends/footer.html' %}    
 
     <!-- script -->
