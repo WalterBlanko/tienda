@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,68 @@
     {% include 'files/extends/links.html' %}
 
 </head>
+
 <body class="gradient-custom">
-    {% include 'files/extends/barra.html' %}    
-    {% include 'files/extends/footer.html' %}    
+    {% include 'files/extends/barra.html' %}
+        {% load humanize %}
+        <section class="vh-50">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-12 col-md-8  ">
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                                <h2>Carrito</h2>
+                                <ul id="carrito" class="list-group"></ul>
+                                <hr>
+                                <div class="">
+                                    <ul>
+                                        <li class="submenu">
+                                            <div id="carrito" class="">
+                                                <table class="table text-white">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Codigo Producto</th>
+                                                            <th scope="col">Nombre</th>
+                                                            <th scope="col">Precio</th>
+                                                            <th scope="col">Descripcion</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">UYH347F</th>
+                                                            <td>Macetero lucido</td>
+                                                            <td>$19,546</td>
+                                                            <td>Macetero entero loco</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">3082874</th>
+                                                            <td>Flores de weed</td>
+                                                            <td>$15,454</td>
+                                                            <td>Flores con weed</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">87543985</th>
+                                                            <td> Arbusto de leche </td>
+                                                            <td>$13,648</td>
+                                                            <td>Arbusto con leche descremada</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p class="text-right">Total: <span id="total"></span>$</p>
+                                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                                <button id="boton-comprar" class="btn btn-primary">Comprar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {% include 'files/extends/footer.html' %}
 </body>
+
 </html>

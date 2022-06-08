@@ -12,7 +12,53 @@
 </head>
 <body class="gradient-custom">
     {% include 'files/extends/barra.html' %}
-    {% include 'files/catalogos/maceteros.html' %}    
+    {% load humanize %}
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="card col-md-10 col-sm-10 col-lg-3 mt-4 " style="background: rgb(122, 217, 200);">
+                <h1 class="my-4">Categorias</h1>
+                <div class="card-body list-group">
+                    {% for c in categorias %}
+                    <a href="{% url 'catalogo' %}" class="list-group-item"
+                    style="background: rgb(212, 228, 226);">{{c.nombreCategoria}}</a>&nbsp;
+                    {% endfor %}
+                </div>
+                <a href="{% url 'form_cat' %}" class="btn btn-success">Agregar nuevo Producto</a>&nbsp;
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <br>
+        <h2 class="fw-bold">Productos de la Tienda</h2>
+        <div class="row">
+            {% for pro in productos%}
+            <div class="col-md-10 col-sm-10 col-lg-3 mt-4 ">
+                <div class="card fw-bold fs-4 text-center"
+                    style="width: 100%; height: 100%; background-color: rgb(122, 217, 200);">
+                    {% if pro.imagen %}
+                    <img src="{{pro.imagen.url}}" style="width: 100%; height:100%;" class="card-img-top" alt="" />
+                    {% endif %}
+                    <div class="car-body" style="background-color: rgb(151, 237, 236);">
+                        <p class="card-text">Nombre: {{ pro.nombreProducto }}</p>
+                        <p class="card-text">Descripcion: {{pro.descripcionProducto}}</p>
+                        <p class="card-text">Precio: ${{pro.precioProducto | intcomma}}</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <div class="d-flex justify-content-center">
+                            <a href="{% url 'form_mod_cat' pro.idProducto %}"
+                                class="btn btn-primary">Modificar</a>&nbsp;
+                            <a href="{% url 'form_del_cat' pro.idProducto %}" class="btn btn-danger">Eliminar</a>&nbsp;
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <br>
+        <br>
+    </div>
+
     {% include 'files/extends/footer.html' %}    
 </body>
 </html>

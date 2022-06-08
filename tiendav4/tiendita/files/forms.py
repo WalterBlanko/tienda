@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm, TextInput, EmailInput, PasswordInput, Select
-from .models import Usuario
+from .models import Usuario, Producto
 
 class UsuarioForm(ModelForm):
     class Meta:
@@ -31,11 +31,18 @@ class UsuarioForm(ModelForm):
                 'class': "form-control form-control-lg",
                 'for': "InputPassword",
                 'placeholder': 'Contraseña',
+                'type': 'password',
             }),
         }
     
     def clean_email(self):
         email = self.cleaned_data.get('correoUsuario')
-        if Usuario.objects.filter(correoUsuario = email).exists():
+        if Usuario.objects.filter(email = email).exists():
             raise forms.ValidationError(u'El email ya está registrado, prueba con otro')
         return email
+
+class ProductoForm(ModelForm):
+
+    class Meta:
+        model = Producto
+        fields = ['idProducto', 'nombreProducto', 'precioProducto', 'descripcionProducto','imagen','Categoria']

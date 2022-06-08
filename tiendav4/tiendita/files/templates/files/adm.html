@@ -12,32 +12,132 @@
 <body class="gradient-custom">
     {% include 'files/extends/barra.html' %}    
     <div class="row">
-        <h1>Usuarios registrados</h1>
+        <h2 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Usuarios registrados</h1>
     </div>
-    <tr>
-        <td>
-            <td>Id</td>
-            <td>Usuario</td>
-            <td>Correo</td>
-            <td>Region</td>
-            <td>Provincia</td>
-            <td>Comuna</td>
-            <td>Contraseña</td>
-        </td>
-    </tr>
-    <table>
-        {% for us in usuarios %}
-            <tr>
-                <td>{{ us.idUsuario }}</td>
-                <td>{{ us.nombreUsuario }}</td>
-                <td>{{ us.correoUsuario }}</td>
-                <td>{{ us.passUsuario }}</td>
-                <td>{{ us.Region }}</td>
-                <td>{{ us.Provincia }}</td>
-                <td>{{ us.Comuna }}</td>
-            </tr>
-        {% endfor %}
-    </table>
+    <div class="adm-menu" >
+        <table class="table table-dark table-striped-columns table-hover centrar">
+            <thead>
+                <tr>
+                    <th scope="col">Id</td>
+                    <th scope="col">Usuario</td>
+                    <th scope="col">Correo</td>
+                    <th scope="col">Region</td>
+                    <th scope="col">Provincia</td>
+                    <th scope="col">Comuna</td>
+                    <th scope="col">Contraseña</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for us in usuarios %}
+                    <tr>
+                        <th scope="row">{{ us.idUsuario }}</td>
+                        <td>{{ us.nombreUsuario }}</td>
+                        <td>{{ us.correoUsuario }}</td>
+                        <td>{{ us.Region }}</td>
+                        <td>{{ us.Provincia }}</td>
+                        <td>{{ us.Comuna }}</td>
+                        <td>{{ us.passUsuario }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Empleados</h1>
+    </div>
+    <div class="adm-menu" >
+        <table class="table table-dark table-striped-columns table-hover centrar">
+            <thead>
+                <tr>
+                    <th scope="col">Id</td>
+                    <th scope="col">Rol</td>
+                    <th scope="col">Administrador</td>
+                    <th scope="col">Usuario</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for emp in empleados %}
+                    <tr>
+                        <th scope="row">{{ emp.idEmpleado }}</td>
+                        <td>{{ emp.rolEmpleado }}</td>
+                        <td>{{ emp.Administrador }}</td>
+                        <td>{{ emp.Usuario }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Categorias</h1>
+    </div>
+    <div class="adm-menu" >
+        <table class="table table-dark table-striped-columns table-hover centrar">
+            <thead>
+                <tr>
+                    <th scope="col">Id</td>
+                    <th scope="col">Categoria</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for cat in categorias %}
+                    <tr>
+                        <th scope="row">{{ cat.idCategoria }}</td>
+                        <td>{{ cat.nombreCategoria }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <h2 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Productos</h1>
+    </div>
+    <div class="adm-menu" >
+        <table class="table table-dark table-striped-columns table-hover centrar">
+            <thead>
+                <tr>
+                    <th scope="col">Id</td>
+                    <th scope="col">Categoria</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for prod in productos %}
+                    <tr>
+                        <th scope="row">{{ prod.idProducto }}</td>
+                        <td>{{ prod.nombreProducto }}</td>
+                        <td>{{ prod.precioProducto }}</td>
+                        <td>{{ prod.descripcionProducto }}</td>
+                        <td>{{ prod.Categoria }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+   
+    <div class="row">
+        <h2 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Compras</h1>
+    </div>
+    <div class="adm-menu" >
+        <table class="table table-dark table-striped-columns table-hover centrar">
+            <thead>
+                <tr>
+                    <th scope="col">Id</td>
+                    <th scope="col">Cantidad</td>
+                    <th scope="col">Total</td>
+                    <th scope="col">Usuario</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for hist in historial %}
+                    <tr>
+                        <th scope="row">{{ hist.idCompra }}</td>
+                        <td>{{ hist.cantidadProductos }}</td>
+                        <td>{{ hist.totalCompra }}</td>
+                        <td>{{ hist.Usuario }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
     {% include 'files/extends/footer.html' %}    
 </body>
 </html>
