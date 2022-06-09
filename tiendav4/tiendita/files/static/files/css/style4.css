@@ -123,3 +123,68 @@ li {
 .configBtn {
     margin-top: 2rem;
 }
+
+/** Menu Historial **/
+.configuracion__menuHist {
+    background-color: rgb(33,37,41);
+    position: absolute;
+    width: 78rem;
+    height: 50rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    color: aliceblue;
+}
+
+.configuracion__flexHist {
+    display: flex;
+    flex-direction: row;
+}
+
+.histLetras {
+    padding-left: 5rem;
+}
+.configuracion__marginHist {
+    margin-left: 6rem;
+}
+
+/** Direcciones menu **/
+.configuracion__btnsDire {
+    display: flex;
+    justify-content: space-around;
+}
+
+.configuracion__menuDir {
+    background-color: rgb(33,37,41);
+    position: absolute;
+    width: 78rem;
+    height: 35rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    color: aliceblue;
+}
+
+.configuracion__menuBtn {
+    transform: translate(59%, -212%);
+    background-color: rgb(33,37,41);
+    position: absolute;
+    width: 78rem;
+    height: 6rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    color: aliceblue;
+}
+
+.configuracion__menuBtn2 {
+    transform: translate(46%, -212%);
+    background-color: rgb(33,37,41);
+    position: absolute;
+    width: 78rem;
+    height: 6rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 2rem;
+    color: aliceblue;
+}

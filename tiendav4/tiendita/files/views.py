@@ -122,7 +122,7 @@ def historial(request):
     return render(request, 'files/configuraciones/historial.html')
 
 def cupones(request):
-    return render(request, 'files/configuraciones')
+    return render(request, 'files/configuraciones/cupones.html')
 
 def direcciones(request):
     return render(request, 'files/configuraciones/direcciones.html')

@@ -1,0 +1,49 @@
+{% load static %}
+<div class="configuracion__menuIzq">
+    <div class="configuracion__contentIzq">
+        <ul>
+            <li>
+                <a class="configuracion__links" href="{% url 'settings' %}">
+                    <div class="configuracion__linksSpace">
+                        <p>Datos personales</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="configuracion__links" href="{% url 'historial' %}">
+                    <div class="configuracion__linksSpace">
+                        <p>Mis compras</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="configuracion__links" href="{% url 'direcciones' %}">
+                    <div class="configuracion__linksSpace">
+                        <p>Direcciones</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="configuracion__links" href="{% url 'medPagos' %}">
+                    <div class="configuracion__linksSpace">
+                        <p>Mis medios de pago</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="configuracion__links" href="{% url 'cupones' %}">
+                    <div class="configuracion__linksSpace">
+                        <p>Mis cupones disponibles</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a class="configuracion__links" href="#">
+                    <div class="configuracion__linksSpace">
+                        <p>Cerrar sesion</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
