@@ -1,8 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2B48BCBD-D1BB-8233-8BE1-0E4D9646E594" name="administrador">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="456A9F19-C16F-B072-06D8-E6F868EB96C2" name="cliente">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-02 15:49:53 UTC</createdTime>
-<generatorID>1217E4F1-7CAE-DEDC-523D-6A1907B4CE8C</generatorID>
+<createdTime>2022-06-09 01:41:41 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
@@ -16,10 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idAdministrador" id="FAE29675-C17A-C0FF-9A08-1AFC9B793891">
+<Attribute name="idCliente" id="3F8DC420-F1FE-E81B-51B5-4ED96E3C36C3">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-02 15:49:53 UTC</createdTime>
-<generatorID>7DDEFACB-F41E-68F8-D0B1-3F780074775E</generatorID>
+<createdTime>2022-06-09 01:41:43 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
@@ -29,22 +27,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="cargoAdministrador" id="D5D7CEF6-AAE1-0E26-7CDD-CBBF58AB98A2">
+<Attribute name="idTipoUsuario" id="EAEAC4C9-83C6-284C-FC10-9AA1B747CA65">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-02 15:56:02 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<engineerTo>
-<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="idTipoUsuario" id="0D736530-4E0D-826C-1DE0-5EC82993AEF4">
-<createdBy>victo</createdBy>
-<createdTime>2022-06-09 01:42:49 UTC</createdTime>
-<generatorID>0F5FE2FB-1E3B-925A-E95D-82F2069EF68D</generatorID>
+<createdTime>2022-06-09 01:42:18 UTC</createdTime>
+<generatorID>7558AA22-F0FE-80C1-D3C7-40B969DCF883</generatorID>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
@@ -57,18 +43,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="A47E8416-2ED8-6295-7039-756115ED50C0" name="administrador PK">
+<identifier id="EB4CB0F1-EA5E-B4C6-9216-FE9C76758307" name="Entity_12 PK">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-02 15:49:53 UTC</createdTime>
-<generatorID>07466207-D71B-022B-3D4E-2DA53DA557C5</generatorID>
+<createdTime>2022-06-09 01:41:50 UTC</createdTime>
 <ownerDesignName>modelo</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="false"/>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>FAE29675-C17A-C0FF-9A08-1AFC9B793891</attributeRef>
+<attributeRef>3F8DC420-F1FE-E81B-51B5-4ED96E3C36C3</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

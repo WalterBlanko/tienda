@@ -55,18 +55,46 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idCliente" id="9BEBDBA3-415B-0167-1351-2732C2583154">
+<Attribute name="idCliente" id="37628F8C-4981-5653-84B2-B3CD2D472999">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-02 15:49:53 UTC</createdTime>
-<generatorID>B320F104-7096-30BF-D2B9-969D9A81D053</generatorID>
+<createdTime>2022-06-09 01:42:24 UTC</createdTime>
+<generatorID>5B2E34D7-D154-9D99-251B-4981985ACB4E</generatorID>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
 </engineerTo>
-<referedAttribute>774332ED-0C1B-9372-7CC2-C524C8F21704</referedAttribute>
+<referedAttribute>3F8DC420-F1FE-E81B-51B5-4ED96E3C36C3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idProducto" id="9AED96BE-840A-2B34-F5C8-7BC7DFCEBF01">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-09 01:44:06 UTC</createdTime>
+<generatorID>7EEBA4DD-F016-C690-E12E-3F4646CAF96A</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<referedAttribute>0D3741B2-933E-0563-6FF7-C0A3A4FF15E2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombreProducto" id="5CEE144C-71AB-FF53-4070-31517D4CDF0C">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-09 01:44:06 UTC</createdTime>
+<generatorID>7EEBA4DD-F016-C690-E12E-3F4646CAF96A</generatorID>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<referedAttribute>EC779EF8-2D7F-3158-3A1E-56064EF5C210</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Tiendita</title>
+    {% load static %}
+    {% include 'files/extends/links.html' %}
+
+</head>
+<body class="gradient-custom">
+    {% include 'files/extends/barra.html' %}
+    <div class="configuracion">
+        <div class="configuracion__saludoUser">
+            <div class="saludo__letras">
+                <h1>holi</h1>
+            </div>
+        </div>
+        <div class="configuracion__espacio">
+            <div class="configuracion__grid">
+                <div class="configuracion__menuIzq">
+                    <div class="configuracion__contentIzq">
+                        <ul>
+                            <li>
+                                <a class="configuracion__links" href="{% url 'settings' %}">
+                                    <div class="configuracion__linksSpace">
+                                        <p>Datos personales</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="configuracion__links" href="{% url 'historial' %}">
+                                    <div class="configuracion__linksSpace">
+                                        <p>Mis compras</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="configuracion__links" href="{% url 'direcciones' %}">
+                                    <div class="configuracion__linksSpace">
+                                        <p>Direcciones</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="configuracion__links" href="{% url 'medPagos' %}">
+                                    <div class="configuracion__linksSpace">
+                                        <p>Mis medios de pago</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="configuracion__links" href="{% url 'cupones' %}">
+                                    <div class="configuracion__linksSpace">
+                                        <p>Mis cupones disponibles</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="configuracion__links" href="#">
+                                    <div class="configuracion__linksSpace">
+                                        <p>Cerrar sesion</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="configuracion__menuCtr">
+                    <div class="configuracion__datosPersonales">
+                        <h2>Datos personales</h2>
+                        <form>
+                            <div class="form-group edit space">
+                                <div class="form-outline form-white mb-4 ">
+                                    <label class="form-label fw-bold fs-4">Nombre de usuario</label>
+                                    <input class="form-control form-control-lg" type="text" placeholder="Tu nombre de usuario">
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label fw-bold fs-4">Correo electronico</label>
+                                    <input class="form-control form-control-lg" type="email" placeholder="Tu correo electronico">
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label fw-bold fs-4">Contraseña</label>
+                                    <input class="form-control form-control-lg" type="password" placeholder="Tu contraseña">
+                                </div>
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label fw-bold fs-4">Confirmar contraseña</label>
+                                    <input class="form-control form-control-lg" type="password" placeholder="Confirmar tu contraseña">
+                                    <input class="btn btn-outline-light btn-lg px-5 configBtn" type="submit" value="Guardar">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <hr>
+    {% include 'files/extends/footer.html' %}    
+</body>
+</html>

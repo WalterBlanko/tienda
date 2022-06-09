@@ -6,71 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito - Tiendita</title>
-
     {% load static %}
+    <link rel="preload" href="{% static 'files/css/style5.css' %}" as="style">
+    <link rel="stylesheet" href="{% static 'files/css/style5.css' %}">
     {% include 'files/extends/links.html' %}
 
 </head>
+<!-- ================== CARRITO DE COMPRA =============== -->
+<!-- ================== NO LE PUSE FUNCION, NO TENGO NI LA MENOR IDEA DE COMO HACERLO  =============== -->
 
 <body class="gradient-custom">
     {% include 'files/extends/barra.html' %}
-        {% load humanize %}
-        <section class="vh-50">
-            <div class="container py-5">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-md-8  ">
-                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
-                            <div class="card-body p-5 text-center">
-                                <h2>Carrito</h2>
-                                <ul id="carrito" class="list-group"></ul>
-                                <hr>
-                                <div class="">
-                                    <ul>
-                                        <li class="submenu">
-                                            <div id="carrito" class="">
-                                                <table class="table text-white">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">Codigo Producto</th>
-                                                            <th scope="col">Nombre</th>
-                                                            <th scope="col">Precio</th>
-                                                            <th scope="col">Descripcion</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">UYH347F</th>
-                                                            <td>Macetero lucido</td>
-                                                            <td>$19,546</td>
-                                                            <td>Macetero entero loco</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">3082874</th>
-                                                            <td>Flores de weed</td>
-                                                            <td>$15,454</td>
-                                                            <td>Flores con weed</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">87543985</th>
-                                                            <td> Arbusto de leche </td>
-                                                            <td>$13,648</td>
-                                                            <td>Arbusto con leche descremada</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </li>
-                                    </ul>
+    {% load humanize %}
+    <div class="container py-5">
+        <div class="row d-flex justify-content-center my-4">
+            <div class="col-md-8">
+                <div class="card  mb-4 bg-dark text-white">
+                    <div class="card-header py-3">
+                        <h5 class="mb-0">Productos</h5>
+                        <hr class="my-4" />
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <!-- col-lg-3 col-md-12 mb-4 mb-lg-0 -->
+                            <div class="mb-lg-0" style="width: 25%; height: 25%;">
+                                <div class="hover-overlay hover-zoom ripple rounded">
+                                    <img src="{% static 'files/img/flores.png' %}" class="" alt="" style="width: 100%;">
                                 </div>
-                                <p class="text-right">Total: <span id="total"></span>$</p>
-                                <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
-                                <button id="boton-comprar" class="btn btn-primary">Comprar</button>
+                            </div>
+                            <div class="col-lg-5 col-md-6 mb-4 mb-lg-0 fs-4 fw-bold text-start text-md-left">
+                                <p>Flor de poronga</p>
+                                <p>Descripcion: La flor que le gusta a tu vieja, perkin</p>
+                                <p>
+                                    <strong>$97.000</strong>
+                                </p>
+                                <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                    title="Remove item">
+                                    <i class="bi bi-trash3-fill"></i>
+                                </button>
+                            </div>
+
+                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                                <label class="form-label fs-5 fw-bold" for="form1">Cantidad</label>
+                                <div class="d-flex mb-4" style="max-width: 300px">
+                                    <button class="btn btn-primary px-4 me-1"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                        <i class="bi bi-dash"></i>
+                                    </button>
+                                    <div class="form-outline">
+                                        <input id="form1" min="0" name="quantity" value="1" type="number"
+                                            class="form-control">
+                                    </div>
+                                    <button class="btn btn-primary px-4 ms-1"
+                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                        <i class="bi bi-plus-lg"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
-        </section>
+            <div class="col-md-4 ">
+                <div class="card mb-4 bg-dark text-white">
+                    <div class="card-header py-3">
+                        <h5 class="mb-0 fs-4">Boleta</h5>
+                        <hr class="my-4" />
+                    </div>
+                    <div class="card-body ">
+                        <ul class="list-group list-group-flush fs-4">
+                            <li
+                            class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0 bg-dark text-white">
+                            Producto
+                            <span>$97.000</span>
+                        </li>
+                        <li
+                        class="list-group-item d-flex justify-content-between align-items-center px-0 bg-dark text-white">
+                        Envío
+                        <span>Gratis</span>
+                    </li>
+                    <hr class="my-4" />
+                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3 bg-dark text-white">
+                                <div>
+                                    <strong>Total</strong>
+                                    <strong>
+                                        <p class="mb-0">(Va encluido el IVA)</p>
+                                    </strong>
+                                </div>
+                                <span><strong>$90.090</strong></span>
+                            </li>
+                        </ul>
+
+                        <button type="button" class="btn btn-primary btn-lg btn-block"> Pagar </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     {% include 'files/extends/footer.html' %}
 </body>

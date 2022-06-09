@@ -55,19 +55,18 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idUsuario" id="11A787CA-FED5-F7B9-3790-136E4318B0E7">
+<Attribute name="idTipoUsuario" id="4DEDC0DF-4189-28B2-63C6-E77C318F0605">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-02 15:51:06 UTC</createdTime>
-<generatorID>F66D5972-07BA-7C26-7C5C-FA02890A2A46</generatorID>
+<createdTime>2022-06-09 01:42:42 UTC</createdTime>
+<generatorID>A2342CE0-79F6-392F-9BA1-16EE6BEE7E03</generatorID>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
 </engineerTo>
-<referedAttribute>AD06F236-D3F0-489F-1456-B6D47D3F4E05</referedAttribute>
+<referedAttribute>9661C0A8-F096-DC25-BCC2-C114B306158C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
-<dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

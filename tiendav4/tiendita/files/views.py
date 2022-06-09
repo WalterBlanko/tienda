@@ -111,3 +111,21 @@ def form_del_cat(request, id):
     producto.delete()
 
     return redirect(to="catalogo")
+
+def pagar(request):
+    return render(request, 'files/pagar.html')
+
+def settings(request):
+    return render(request, 'files/configuraciones/config.html')
+
+def historial(request):
+    return render(request, 'files/configuraciones/historial.html')
+
+def cupones(request):
+    return render(request, 'files/configuraciones')
+
+def direcciones(request):
+    return render(request, 'files/configuraciones/direcciones.html')
+
+def medPagos(request):
+    return render(request, 'files/configuraciones/medPagos.html')
