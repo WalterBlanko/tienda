@@ -30,18 +30,6 @@
 <dataTypePrecision>7</dataTypePrecision>
 <ownDataTypeParameters>,7,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="tipoUsuario" id="66098E43-6155-E550-71A3-852418A8B359">
-<createdBy>victo</createdBy>
-<createdTime>2022-06-09 01:39:03 UTC</createdTime>
-<ownerDesignName>modelo</ownerDesignName>
-<engineerTo>
-<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 <Attribute name="nombreUsuario" id="E781BD0D-578E-C60C-D5EB-D576B53ACAF0">
 <createdBy>victo</createdBy>
 <createdTime>2022-06-02 15:49:53 UTC</createdTime>

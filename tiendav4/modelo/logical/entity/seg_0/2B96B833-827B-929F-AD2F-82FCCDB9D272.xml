@@ -16,7 +16,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="idCompra" id="342C0E2E-6D19-9338-A502-5E9D4E08A36D">
+<Attribute name="idHistorial" id="342C0E2E-6D19-9338-A502-5E9D4E08A36D">
 <createdBy>victo</createdBy>
 <createdTime>2022-06-02 15:49:53 UTC</createdTime>
 <generatorID>90318714-71ED-05E4-F1C5-EA31D8C80AFB</generatorID>
@@ -27,6 +27,18 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fechaHistorial" id="7FDDEBE5-2D32-212A-17D0-68A73A19FFC0">
+<createdBy>victo</createdBy>
+<createdTime>2022-06-09 20:30:09 UTC</createdTime>
+<ownerDesignName>modelo</ownerDesignName>
+<engineerTo>
+<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="cantidadProductos" id="72644C2E-F93D-9E4F-803B-55067A569FF0">
@@ -55,24 +67,10 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="idCliente" id="37628F8C-4981-5653-84B2-B3CD2D472999">
+<Attribute name="idProducto" id="071F9283-5522-A6AF-3E2E-11298DBA7150">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-09 01:42:24 UTC</createdTime>
-<generatorID>5B2E34D7-D154-9D99-251B-4981985ACB4E</generatorID>
-<ownerDesignName>modelo</ownerDesignName>
-<engineerTo>
-<item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
-</engineerTo>
-<referedAttribute>3F8DC420-F1FE-E81B-51B5-4ED96E3C36C3</referedAttribute>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="idProducto" id="9AED96BE-840A-2B34-F5C8-7BC7DFCEBF01">
-<createdBy>victo</createdBy>
-<createdTime>2022-06-09 01:44:06 UTC</createdTime>
-<generatorID>7EEBA4DD-F016-C690-E12E-3F4646CAF96A</generatorID>
+<createdTime>2022-06-09 21:19:09 UTC</createdTime>
+<generatorID>1FF0694C-DA3D-822B-12CC-ECE575C5F6B2</generatorID>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
@@ -83,18 +81,18 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="nombreProducto" id="5CEE144C-71AB-FF53-4070-31517D4CDF0C">
+<Attribute name="idCliente" id="5E78E483-64F0-4524-6082-9032DE3C9165">
 <createdBy>victo</createdBy>
-<createdTime>2022-06-09 01:44:06 UTC</createdTime>
-<generatorID>7EEBA4DD-F016-C690-E12E-3F4646CAF96A</generatorID>
+<createdTime>2022-06-09 21:19:30 UTC</createdTime>
+<generatorID>F027ED7D-F8BF-86E3-8B67-F1E2F77CD8AF</generatorID>
 <ownerDesignName>modelo</ownerDesignName>
 <engineerTo>
 <item key="47F8ABAD-BF27-C519-23FE-A09D1633D951" value="true"/>
 </engineerTo>
-<referedAttribute>EC779EF8-2D7F-3158-3A1E-56064EF5C210</referedAttribute>
+<referedAttribute>3F8DC420-F1FE-E81B-51B5-4ED96E3C36C3</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>

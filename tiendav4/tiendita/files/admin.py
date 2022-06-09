@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Region, Provincia, Comuna, Usuario, Administrador, Empleado, Cliente, Historial, Categoria, Producto, Login
+from .models import Region, Provincia, Comuna, Usuario, Administrador, Empleado, Cliente, Historial, Categoria, Producto, TipoUsuario
 from import_export import resources
 from import_export.admin import ImportExportModelAdmin
 
@@ -37,4 +37,4 @@ admin.site.register(Cliente)
 admin.site.register(Historial)
 admin.site.register(Categoria)
 admin.site.register(Producto)
-admin.site.register(Login)
+admin.site.register(TipoUsuario)

@@ -1,7 +1,7 @@
 from django.shortcuts import render, HttpResponse,  redirect
 
 from .forms import UsuarioForm, ProductoForm
-from .models import Categoria, Empleado, Producto, Usuario, Login, Historial
+from .models import Categoria, Empleado, Producto, Usuario, Historial
 from django.contrib.auth.hashers import make_password, check_password
 
 # Create your views here.
@@ -11,8 +11,8 @@ def home(request):
 def carrito(request):
     return render(request, 'files/carrito.html')
 
-# def login(request):
-#     return render(request, 'files/login.html')
+def login(request):
+    return render(request, 'files/login.html')
 
 def register(request):
     datos = {
@@ -41,17 +41,17 @@ def administrador(request):
     }
     return render(request, 'files/adm.html', datos)
 
-def login(request):
-    if request.method == 'POST':
-        email = request.POST['correoUsuario']
-        encryptedpassword=make_password(request.POST['passUsuario'])
-        checkpassword=check_password(request.POST['passUsuario'], encryptedpassword)
-        data=Login(email=email, password=encryptedpassword)
+# def login(request):
+#     if request.method == 'POST':
+#         email = request.POST['correoUsuario']
+#         encryptedpassword=make_password(request.POST['passUsuario'])
+#         checkpassword=check_password(request.POST['passUsuario'], encryptedpassword)
+#         data=Login(email=email, password=encryptedpassword)
 
-        data.save()
-        return HttpResponse('Muchas gracias. Sus datos han sido robados, un abrazo')
-    else:
-        return render(request, 'files/login.html')
+#         data.save()
+#         return HttpResponse('Muchas gracias. Sus datos han sido robados, un abrazo')
+#     else:
+#         return render(request, 'files/login.html')
 
 def catalogo(request):
     productos = Producto.objects.all()

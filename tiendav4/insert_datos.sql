@@ -13,7 +13,7 @@ INSERT INTO files_region VALUES(9, 'De la Araucania');
 INSERT INTO files_region VALUES(10, 'De los Lagos');
 INSERT INTO files_region VALUES(11, 'Aysen del Gral. Carlos Ibañez del Campo');
 INSERT INTO files_region VALUES(12, 'Magallanes y de la Antartica Chilena');
-INSERT INTO files_region VALUES(13, 'Metropolitana de Santiago');
+INSERT INTO files_region VALUES(13, 'Metropolitana de Santiago'); 
 INSERT INTO files_region VALUES(14, 'De los Rios');
 INSERT INTO files_region VALUES(15, 'Arica y Parinacota');
 INSERT INTO files_region VALUES(16, 'Ñuble');
@@ -64,7 +64,7 @@ INSERT INTO files_provincia VALUES(055, 'Quillota', 05);
 INSERT INTO files_provincia VALUES(142, 'Ranco', 14);
 INSERT INTO files_provincia VALUES(056, 'San Antonio', 05);
 INSERT INTO files_provincia VALUES(057, 'San Felipe de Aconcagua', 05);
-INSERT INTO files_provincia VALUES(131, 'Santiago', 13);
+INSERT INTO files_provincia VALUES(131, 'Santiago', 13); 
 INSERT INTO files_provincia VALUES(136, 'Talagante', 13);
 INSERT INTO files_provincia VALUES(071, 'Talca', 07);
 INSERT INTO files_provincia VALUES(014, 'Tamarugal', 01);
@@ -419,20 +419,38 @@ INSERT INTO files_comuna VALUES (07408, 'Yerbas Buenas', 074);
 INSERT INTO files_comuna VALUES (08313, 'Yumbel', 083);
 INSERT INTO files_comuna VALUES (16109, 'Yungay', 161);
 INSERT INTO files_comuna VALUES (05405, 'Zapallar', 54);
-INSERT INTO files_categoria VALUES (1, 'Flor');
-INSERT INTO files_categoria VALUES (2, 'Tierra de hojas');
-INSERT INTO files_categoria VALUES (3, 'Arbusto');
-INSERT INTO files_categoria VALUES (4, 'Macetero');
+INSERT INTO files_categoria VALUES (1, 'Flor', null);
+INSERT INTO files_categoria VALUES (2, 'Tierra de hojas', null);
+INSERT INTO files_categoria VALUES (3, 'Arbusto', null);
+INSERT INTO files_categoria VALUES (4, 'Macetero', null);
+INSERT INTO files_tipousuario VALUES (1, 'Cliente');
+INSERT INTO files_tipousuario VALUES (2, 'Administrador');
+INSERT INTO files_tipousuario VALUES (3, 'Empleado');
+INSERT INTO files_usuario VALUES (1, 'RigobertoMcFinfla', 'notengoidea@duocuc.cl', 'contraprueba', 13123, 131, 13, 3);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor gamer', null, 77777, 'Flor gaymerpro', null, 1);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor kawaii', null, 10000, 'Flor kawai desune', null, 1);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor hater', null, 6999,'Flor con cara de Dalas Review', null, 1);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor machista', null, 0, 'Flor opresor', null, 1);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor feminista', null, 66666, 'Flor pasado a ala', null, 1);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Tierra de hojas gamer', null, 77777, 'Tierra de hojas gaymerpro', null, 2);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Tierra de hojas kawaii', null, 10000, 'Tierra de hojas kawai desune', null, 2);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Tierra de hojas hater', null, 6999,'Tierra de hojas con cara de Dalas Review', null, 2);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Tierra de hojas machista', null, 0, 'Tierra de hojas opresor', null, 2);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Tierra de hojas feminista', null, 66666, 'Tierra de hojas pasado a ala', null, 2);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Arbusto gamer', null, 77777, 'Arbusto gaymerpro', null, 3);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Arbusto kawaii', null, 10000, 'Arbusto kawai desune', null, 3);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Arbusto hater', null, 6999,'Arbusto con cara de Dalas Review', null, 3);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Arbusto machista', null, 0, 'Arbusto opresor', null, 3);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Arbusto feminista', null, 66666, 'Arbusto pasado a ala', null, 3);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero gamer', null, 77777, 'Macetero gaymerpro', null, 4);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero kawaii', null, 10000, 'Macetero kawai desune', null, 4);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero hater', null, 6999,'Macetero con cara de Dalas Review', null, 4);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero machista', null, 0, 'Macetero opresor', null, 4);
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero feminista', null, 66666, 'Macetero pasado a ala', null, 4);
 
-
-
-
-DROP SEQUENCE sq_com;
-CREATE SEQUENCE sq_com;
-
-
+/*
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor gamer', 77777, 'Flor gaymerpro', 1, productos/florgucci_TbGsn1M.png, flor-gamer);
-INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor kawaii', 10000, 'Flor kawai desune', 1, productos/florgucci_Ci9ueeW.png, flor-kawaii
+INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor kawaii', 10000, 'Flor kawai desune', 1, productos/florgucci_Ci9ueeW.png, flor-kawaii);
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor hater', 6999,'Flor con cara de Dalas Review', 1, productos/florgucci_xPKr5bA.png, flor-hater);
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor machista', 0, 'Flor opresor', 1, productos/florgucci_bUTWxM5.png flor-machista);
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Flor feminista', 66666, 'Flor pasado a ala', 1, productos/florgucci_UZ7ZYEP.png, florfeminista);
@@ -451,7 +469,6 @@ INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero kawaii', 10000, 'Ma
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero hater', 6999,'Macetero con cara de Dalas Review', 4, productos/maceterogucci_6B6wWh6.png, macetero-kawaii);
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero machista', 0, 'Macetero opresor', 4, productos/maceterogucci_2zBwhjH.png, macetero-hater);
 INSERT INTO files_producto VALUES (sq_com.NEXTVAL, 'Macetero feminista', 66666, 'Macetero pasado a ala', 4, productos/maceterogucci_r0L6ob7.png, macetero-machista);
+*/
 
 COMMIT;
-
--- slug
